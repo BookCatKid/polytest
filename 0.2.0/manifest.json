@@ -3,7 +3,7 @@
         "name": "Example Mod",
         "id": "examplemod",
         "author": "Example Man",
-        "targets": ["0.5.0-beta5"],
+        "targets": ["0.5.1"],
         "main": "main.mod.js"
     },
     "dependencies": []
