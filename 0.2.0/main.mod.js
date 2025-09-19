@@ -8,7 +8,7 @@ class GhostToggleMod extends PolyMod {
         // pml.registerKeybind("Toggle Ghost", "ghostToggle", "keydown", "KeyO", null, (e) => { this.ghostEnabled = !this.ghostEnabled; });
         // pml.registerClassMixin("EI.prototype", "update",MixinType.REPLACEBETWEEN, `e.car.getTime().numberOfFrames`, `e.car.getTime().numberOfFrames`, `(ActivePolyModLoader.getMod("${this.id}").ghostEnabled ? e.car.getTime().numberOfFrames : 0)`)
         // pml.registerClassMixin("EI.prototype", "update",MixinType.INSERT, `e.car.setCarState(t)`, `;if(!ActivePolyModLoader.getMod("${this.id}").ghostEnabled) break;`)
-        pml.registerClassMixin("Gw.prototype", "getSpeedKmh", MixinType.REPLACEBETWEEN, "return ", "Vw", " 99999; //");
+        pml.registerClassMixin("Gw.prototype", "getSpeedKmh", MixinType.INSERT, "return ", " 99999; //");
     }
 }
 
